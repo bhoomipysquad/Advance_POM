@@ -42,6 +42,13 @@ class BasePage:
         self.driver.execute_script("window.scrollTo(0, 0);")
         time.sleep(2)
 
+        """Scroll Down by Pixels	---    window.scrollBy(0, 500);
+           Scroll Up by Pixels	    ---    window.scrollBy(0, -500);
+           Scroll to Bottom	        ---    window.scrollTo(0, document.body.scrollHeight);
+           Scroll to Top	        ---    window.scrollTo(0, 0);
+           Scroll to Element	    ---    arguments[0].scrollIntoView();   
+"""
+
     def switch_window(self):
         original_window = self.driver.window_handles[0]
         new_window = self.driver.window_handles[1]
