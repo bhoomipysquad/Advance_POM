@@ -26,9 +26,7 @@ class LoginPage(BasePage):
     def login(self, username, password):
         """Log in using provided username and password."""
         self.enter_username(username)
-        time.sleep(2)
         self.enter_password(password)
-        time.sleep(2)
         self.click_login()
         time.sleep(2)
         if self.driver.current_url != "https://www.saucedemo.com/":

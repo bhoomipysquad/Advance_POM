@@ -201,6 +201,69 @@ class BasePage:
 
 
 
+    """
+     Measuring Test Coverage
+     To check which parts of your code are tested:
+                                 pytest --cov=my_project --cov-report=html
+     Generates an HTML report of test coverage.
+     
+     
+     Run only marked tests:
+                                 pytest -m slow
+
+
+
+    # Run tests in 4 parallel processes
+                                 pytest -n 4  
+               
+               
+                                
+    Generate HTML test reports:
+                                pip install pytest-html
+                                pytest --html=report.html
+                                
+    
+    Retries flaky tests automatically.
+                                pip install pytest-rerunfailures
+                                pytest --reruns 3  # Retry failed tests up to 3 times
+                                
+                                
+    Run a specific test::
+                               pytest test_file.py::test_addition
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    How to Install Multiple Plugins at Once?
+    pip install pytest-xdist pytest-mock pytest-cov pytest-html pytest-rerunfailures pytest-django
+
+
+     
+    """
+
+
+
 
 
 
