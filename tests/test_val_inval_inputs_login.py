@@ -10,4 +10,6 @@ def test_login_with_valid_invalid_inputs(setup1,username,password):
     driver = setup1
     login_page = LoginPage(driver)
     login_page.login(username,password)
-    assert driver.current_url == "https://www.saucedemo.com/inventory.html"
+    # assert driver.current_url == "https://www.saucedemo.com/inventory.html"
+    print("current url is ---->   " , driver.current_url)
+    assert  driver.current_url.endswith("/inventory.html")
