@@ -46,7 +46,12 @@ class BasePage:
            Scroll Up by Pixels	    ---    window.scrollBy(0, -500);
            Scroll to Bottom	        ---    window.scrollTo(0, document.body.scrollHeight);
            Scroll to Top	        ---    window.scrollTo(0, 0);
-           Scroll to Element	    ---    arguments[0].scrollIntoView();   
+           
+          [ Scroll to Element(Scroll down until this element is visible on screen.)	   ---    arguments[0].scrollIntoView();   
+             element = driver.find_element(By.ID, "submit-btn")
+             driver.execute_script("arguments[0].scrollIntoView();", element)
+          ]
+
 """
 
     def switch_window(self):
