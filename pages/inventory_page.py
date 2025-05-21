@@ -28,7 +28,7 @@ class InventoryPage(BasePage):
         for side_menu ,xpath in side_menu_options.items():
             self.click(By.ID , "react-burger-menu-btn") #click on side menu
             self.click(By.XPATH, xpath)  # click on specific side menu
-            self.hover_and_check_images()
+            self.scroll_up_down()
             self.driver.back()
 
 
