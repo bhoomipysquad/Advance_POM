@@ -261,19 +261,20 @@ With verbose	       pytest -v
 
 """
  Daily Steps (with Simple Commands):
-    
-🔢	What to Do                                      	Why	                                               Command / Action
-1️⃣	Get the project                     	Download project from GitHub	                git clone <url> or use File → Get from GitHub
-2️⃣	Make a new branch	                    So your work doesn’t disturb main	            git checkout -b new-feature
-3️⃣	Do your work	                        Write code or fix bugs	                         (code as usual)
-4️⃣	Check changes	                        See what files were changed	                    git status
-5️⃣	Add files to git	                    Tell Git what you changed	                    git add .
-6️⃣	Save with a message                 	Like a "save point"	                            git commit -m "what you did"
-7️⃣	Upload to GitHub	                    Share your work with your team              	git push -u origin new-feature
-8️⃣	Open Pull Request                   	Ask to merge your work to main	                Go to GitHub → "Compare & Pull Request"
-9️⃣	Get latest from team                	Keep your code updated	                        git pull origin main
-🔟	Merge a branch	                        Combine another branch into yours           	git merge branch-name
-🔁	Undo last save (if mistake)	            Fix a commit mistake	                        git reset --soft HEAD~1
+     
+🔢	What to Do                                      	Why	                                               Command / Action                                PyCharm UI
+1️⃣	Get the project ----------------------  Download project from GitHub  ---------------   git clone <url> or use File → Get from GitHub  ------  File → New Project from Version Control
+2️⃣	Make a new branch --------------------  So your work doesn’t disturb main  -----------  git checkout -b your-branch  -----------------------   Git → Branches → New Branch
+3️⃣	Do your work ------------------------   Write code or fix bugs	----------------------  (code as usual)
+4️⃣	Check changes  ----------------------   See what files were changed	 ----------------   git status  ----------------------------------------  Git → Show Git Log / Version Control tab
+5️⃣	Add files to git  --------------------  Tell Git what you changed	-----------------   git add .   or git add filename  --------------------  Git → Commit
+6️⃣	Save with a message  ----------------	Like a "save point"	 ------------------------   git commit -m "what you did"   ----------------------  Git → Commit
+7️⃣	Upload to GitHub  --------------------  Share your work with your team  -------------   git push -u origin your-branch  ---------------------  Git → Push
+8️⃣	Open Pull Request  -------------------	Ask to merge your work to main	--------------  Go to GitHub → "Compare & Pull Request"
+9️⃣	Get latest from team (pull)   -------   Keep your code updated	----------------------  git pull origin main     ---------------------------   Git → Pull  
+🔟	Merge a branch(e.g., main into 	        Combine another branch into yours  -----------  git merge branch-name
+        yours, or yours into main)
+🔁	Undo last save (if mistake)	 --------   Fix a commit mistake	                        git reset --soft HEAD~1
 
 
 
