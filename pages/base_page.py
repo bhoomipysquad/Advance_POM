@@ -54,6 +54,14 @@ class BasePage:
            Scroll to Top	        ---    window.scrollTo(0, 0);
 """
 
+    def scroll_up_down_by_pixel(self):
+        for i in range(50):  # Scroll down 50 times
+            self.driver.execute_script("window.scrollBy(0, 500);")
+            time.sleep(0.5)
+        time.sleep(3)
+        for i in range(50):  # Scroll up 50 times
+            self.driver.execute_script("window.scrollBy(0, -500);")
+            time.sleep(0.5)
 
     def switch_window(self):
         original_window = self.driver.window_handles[0]
